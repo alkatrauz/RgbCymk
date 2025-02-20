@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB vs CMYK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(to right, red, green, blue);
+            color: white;
+            padding: 20px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        table {
+            background: linear-gradient(to right, red, green, blue);
+
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        footer {
+            background: black;
+            color: white;
+            padding: 10px;
+        }
+
+        footer li{    
+        list-style-type: none;
+        color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RGB vs CMYK</h1>
+        <p>Entenda as diferenças entre os modelos de cores</p>
+    </header>
+    
+    <main>
+        <section id="pixels">
+            <h2>Como Funcionam os Pixels</h2>
+            <p>Cada pixel contém subpixels de vermelho, verde e azul. Alterando a intensidade de cada cor, diferentes tons são exibidos na tela.</p>
+            <img src="pixel.jpg" alt="Ampliação de um pixel RGB">
+        </section>
+        
+        <section id="rgb">
+            <h2>Modelo Aditivo (RGB)</h2>
+            <p>O modelo RGB é usado para telas, combinando vermelho, verde e azul para criar cores.</p>
+            <img src="rgb.jpg" alt="Exemplo de modelo RGB">
+        </section>
+        
+        <section id="cmyk">
+            <h2>Modelo Subtrativo (CMYK)</h2>
+            <p>O modelo CMYK é utilizado na impressão, misturando ciano, magenta, amarelo e preto.</p>
+            <img src="cmyk.jpg" alt="Exemplo de modelo CMYK">
+        </section>
+        
+        <section id="comparacao">
+            <h2>Comparação RGB x CMYK</h2>
+            <p>RGB é ideal para telas, pois emite luz, enquanto CMYK é usado para impressão, pois reflete luz.</p>
+
+            <table>
+                <tr>
+                    <th>RGB</th>
+                    <th>CMYK</th>
+                </tr>
+                <tr>
+                    <td>Usado em telas digitais</td>
+                    <td>Usado em impressão</td>
+                </tr>
+                <tr>
+                    <td>Combina luzes para formar cores</td>
+                    <td>Mistura pigmentos para formar cores</td>
+                </tr>
+                <tr>
+                    <td>Usado em monitores, TVs e telas</td>
+                    <td>Usado em impressoras e gráficas</td>
+                </tr>
+                <tr>
+                    <td>Modelo aditivo (luz)</td>
+                    <td>Modelo subtrativo (tinta)</td>
+            </table>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Referências:</p>
+        <ul>
+            <li><a href="https://sabercomlogica.com/pt/pixel-e-rgb/">sabercomlogico.com -  Pixel e Rgb </a></li>
+            <li><a href="https://www.saturno.com.br/modelo/blog/diferencas-entre-rgb-e-cmyk/#:~:text=O%20CMYK%20corresponde%20as%20cores,mais%20utilizado%20para%20a%20impressão."> saturno.com.br -  Diferencas rgb e cmyk</a></li>
+
+        </ul>
+        <p>Gaona</p>
+    </footer>
+</body>
+</html>
